@@ -1,0 +1,74 @@
+@import 'sections/header';
+// header
+@import 'sections/imgandcontacts';
+// imageandcotacts
+@import 'sections/maincontent';
+// maincontent
+@import 'media';
+// medias
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+// fonts
+
+ // interface_styles 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(./../images/bg.jpg) no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+main.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: #ffffff;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Do Hyeon', sans-serif;
+}
+button{
+    background:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+a{
+    color: #acacac;
+}
+.text-right{
+    text-align: right!important;
+}
+.f_wrap{
+    flex-wrap: wrap;
+}
+button.translate {
+    color: #fff;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

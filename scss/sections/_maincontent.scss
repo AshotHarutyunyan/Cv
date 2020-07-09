@@ -1,0 +1,166 @@
+.content_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_content {
+    width: 60%;
+    position: relative;
+    background: #1c1e1f;
+    height: 80vh;
+    margin: 10vh 0;
+    padding:0.5rem 1rem;
+    overflow-y: scroll;
+    &_item {
+        padding: 2rem 0;
+    }
+    &_item_subtitle {
+        color: #00ab72;
+        margin: 0.5rem 0;
+    }
+    &_item_info{
+        color: #acacac;
+    }
+}
+.lang_container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+button.translate:nth-child(2) {
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.translate.active{
+    color:#00ab72;
+}
+// my_img_mobile
+.my_img_mobile{
+    display: none;
+}
+// personal_info
+
+.my_contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .my_contucts_item{
+        .personal_info_item{
+            padding: 0.5rem 0;
+            border-bottom: 1px solid;
+        }
+    }
+    .main_content_item_info{
+        text-align: left;
+    }
+    .field_number{
+        text-align: right;
+    }
+}
+
+.my_contucts_item  {
+    width: 55%;
+}
+.personal_langueges{
+    width: 40%;
+}
+.personal_info_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .personal_info_icon {
+        color: #00ab72;
+        font-size: 25px;
+        width: 25%;
+    }
+}
+
+.personal_langueges_item {
+    margin-top: 1rem;
+}
+.white_line {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    .field_line{
+        transition: all 2.5s ease-in;
+        width: 0%;
+        height: 5px;
+        background: #00ab72;
+        border-radius: 15px;
+    }
+}
+// skils 
+.skils {
+    .main_content_item_info{
+        text-align: left;
+    }
+    .field_number{
+        text-align: right;
+    }
+    .skils_item {
+        padding-top: 0.5rem;
+    }
+}
+// education 
+.education {
+    .main_content_item_title{
+        padding-bottom: 1rem;
+    }
+}
+.education_item{
+    &::after{
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        background:#acacac;
+    }
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+    border-left: 1px solid #acacac;
+}
+.education_item:last-child{
+    border:none;
+}
+.education_item_date {
+    color: #00ab72;
+    padding: 0.5rem 0;
+}
+// works 
+.works_item {
+    text-align: right;
+    padding: 0.5rem 0;
+    .main_content_item_info a{
+        color: #00ab72;
+    }
+    .education_item_info {
+        padding: 0.5rem 0;
+        color: #acacac;
+    }
+    &_img {
+        a{
+        position: relative;
+        display: block;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background:rgba(0,0,0,0.1);
+            }
+        }
+        img{
+        max-width: 100%;
+        }
+    }
+}
+
